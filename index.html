@@ -96,12 +96,23 @@
 
 <p style="font-size:18px;">The number of falsy values are very less. Every values other than falsy values are truthy.</p>
 
-<h4 id="Some-examples-for-falsy-values"><a href="#Some-examples-for-falsy-values" class="headerlink" title="Some examples for falsy values:"></a>Some examples for falsy values:</h4><figure class="highlight plaintext"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br></pre></td><td class="code"><pre><span class="line">const number = null;   </span><br><span class="line">let name;</span><br><span class="line">const value = 0;</span><br><span class="line">const isTrue = false;</span><br><span class="line">const stringVal = &#x27;&#x27;;</span><br><span class="line">const amount = NaN;</span><br><span class="line"></span><br></pre></td></tr></table></figure>
+<h4 id="Some-examples-for-falsy-values"><a href="#Some-examples-for-falsy-values" class="headerlink" title="Some examples for falsy values:"></a>Some examples for falsy values:</h4><code>
+const number = null;   
+let name;
+const value = 0;
+const isTrue = false;
+const stringVal = '';
+const amount = NaN;
+
+</code>
 
 <p style="font-size:18px;">These Values can be checked whether they hold the falsy or truthy value by using the Boolean() method.</p>
 
 
-<figure class="highlight plaintext"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br></pre></td><td class="code"><pre><span class="line"></span><br><span class="line">Boolean(number)  //false</span><br><span class="line">Boolean(name)    //false</span><br><span class="line"></span><br></pre></td></tr></table></figure>
+<code>
+
+<p>Boolean(number)  &#x2F;&#x2F;false<br>Boolean(name)    &#x2F;&#x2F;false</p>
+</code>
 
 <h3 id="Some-examples-for-truthy-values"><a href="#Some-examples-for-truthy-values" class="headerlink" title="Some examples for truthy values:"></a>Some examples for truthy values:</h3><figure class="highlight plaintext"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br></pre></td><td class="code"><pre><span class="line"></span><br><span class="line">const number = 20;</span><br><span class="line">const name = &#x27;Ram&#x27;;</span><br><span class="line">const array = [];</span><br><span class="line">const object = &#123;&#125;;</span><br><span class="line"></span><br><span class="line"></span><br><span class="line">Boolean(number)  //true</span><br><span class="line">Boolean(name)    //true</span><br><span class="line">Boolean(array)   //true</span><br><span class="line">Boolean(object)  //true</span><br><span class="line"></span><br></pre></td></tr></table></figure>
 
