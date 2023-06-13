@@ -1,0 +1,230 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <meta charset="utf-8">
+  
+  
+  <title>Hexo</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+  <meta property="og:type" content="website">
+<meta property="og:title" content="Hexo">
+<meta property="og:url" content="https://github.com/PatilKavya/truthy_falsy_values/index.html">
+<meta property="og:site_name" content="Hexo">
+<meta property="og:locale" content="en_US">
+<meta property="article:author" content="Kavya Patil">
+<meta property="article:tag" content="JavaScript, truthy and falsy Values,">
+<meta name="twitter:card" content="summary">
+  
+    <link rel="alternate" href="/PatilKavya/truthy_falsy_values/atom.xml" title="Hexo" type="application/atom+xml">
+  
+  
+    <link rel="shortcut icon" href="/PatilKavya/truthy_falsy_values/favicon.png">
+  
+  
+    
+<link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/typeface-source-code-pro@0.0.71/index.min.css">
+
+  
+  
+<link rel="stylesheet" href="/PatilKavya/truthy_falsy_values/css/style.css">
+
+  
+    
+<link rel="stylesheet" href="/PatilKavya/truthy_falsy_values/fancybox/jquery.fancybox.min.css">
+
+  
+  
+<meta name="generator" content="Hexo 6.3.0"></head>
+
+<body>
+  <div id="container">
+    <div id="wrap">
+      <header id="header">
+  <div id="banner"></div>
+  <div id="header-outer" class="outer">
+    <div id="header-title" class="inner">
+      <h1 id="logo-wrap">
+        <a href="/PatilKavya/truthy_falsy_values/" id="logo">Hexo</a>
+      </h1>
+      
+        <h2 id="subtitle-wrap">
+          <a href="/PatilKavya/truthy_falsy_values/" id="subtitle">truthy_and_falsy_values</a>
+        </h2>
+      
+    </div>
+    <div id="header-inner" class="inner">
+      <nav id="main-nav">
+        <a id="main-nav-toggle" class="nav-icon"><span class="fa fa-bars"></span></a>
+        
+          <a class="main-nav-link" href="/PatilKavya/truthy_falsy_values/">Home</a>
+        
+          <a class="main-nav-link" href="/PatilKavya/truthy_falsy_values/archives">Archives</a>
+        
+      </nav>
+      <nav id="sub-nav">
+        
+        
+          <a class="nav-icon" href="/PatilKavya/truthy_falsy_values/atom.xml" title="RSS Feed"><span class="fa fa-rss"></span></a>
+        
+        <a class="nav-icon nav-search-btn" title="Search"><span class="fa fa-search"></span></a>
+      </nav>
+      <div id="search-form-wrap">
+        <form action="//google.com/search" method="get" accept-charset="UTF-8" class="search-form"><input type="search" name="q" class="search-form-input" placeholder="Search"><button type="submit" class="search-form-submit">&#xF002;</button><input type="hidden" name="sitesearch" value="https://github.com/PatilKavya/truthy_falsy_values"></form>
+      </div>
+    </div>
+  </div>
+</header>
+
+      <div class="outer">
+        <section id="main">
+  
+    <article id="post-new" class="h-entry article article-type-post" itemprop="blogPost" itemscope itemtype="https://schema.org/BlogPosting">
+  <div class="article-meta">
+    <a href="/PatilKavya/truthy_falsy_values/2023/06/13/new/" class="article-date">
+  <time class="dt-published" datetime="2023-06-13T10:25:47.818Z" itemprop="datePublished">2023-06-13</time>
+</a>
+    
+  </div>
+  <div class="article-inner">
+    
+    
+    <div class="e-content article-entry" itemprop="articleBody">
+      
+        <h1 id="Truthy-and-Falsey-Values"><a href="#Truthy-and-Falsey-Values" class="headerlink" title="Truthy and Falsey Values"></a>Truthy and Falsey Values</h1><p style="font-size:18px;"> In JavaScript, truthy and falsy values are used to determine the truthfulness or falseness of a value in a boolean context.</p>
+
+<p style="font-size:18px;"> Each Values in JavaScript is either the truthy or falsey value i.e when an expression is evaluated in a boolean context (such as in an if statement or as an operand to the logical operators && and ||), JavaScript will automatically perform type coercion and treat values as truthy or falsy based on their underlying truthiness.</p>
+
+<p style="font-size:18px;">The number of falsy values are very less. Every values other than falsy values are truthy.</p>
+
+<h4 id="Some-examples-for-falsy-values"><a href="#Some-examples-for-falsy-values" class="headerlink" title="Some examples for falsy values:"></a>Some examples for falsy values:</h4><figure class="highlight plaintext"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br></pre></td><td class="code"><pre><span class="line">const number = null;   </span><br><span class="line">let name;</span><br><span class="line">const value = 0;</span><br><span class="line">const isTrue = false;</span><br><span class="line">const stringVal = &#x27;&#x27;;</span><br><span class="line">const amount = NaN;</span><br><span class="line"></span><br></pre></td></tr></table></figure>
+
+<p style="font-size:18px;">These Values can be checked whether they hold the falsy or truthy value by using the Boolean() method.</p>
+
+
+<figure class="highlight plaintext"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br></pre></td><td class="code"><pre><span class="line"></span><br><span class="line">Boolean(number)  //false</span><br><span class="line">Boolean(name)    //false</span><br><span class="line"></span><br></pre></td></tr></table></figure>
+
+<h3 id="Some-examples-for-truthy-values"><a href="#Some-examples-for-truthy-values" class="headerlink" title="Some examples for truthy values:"></a>Some examples for truthy values:</h3><figure class="highlight plaintext"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br></pre></td><td class="code"><pre><span class="line"></span><br><span class="line">const number = 20;</span><br><span class="line">const name = &#x27;Ram&#x27;;</span><br><span class="line">const array = [];</span><br><span class="line">const object = &#123;&#125;;</span><br><span class="line"></span><br><span class="line"></span><br><span class="line">Boolean(number)  //true</span><br><span class="line">Boolean(name)    //true</span><br><span class="line">Boolean(array)   //true</span><br><span class="line">Boolean(object)  //true</span><br><span class="line"></span><br></pre></td></tr></table></figure>
+
+
+<p style="font-size:18px;">Truthy and falsy values are used in conditional statements like if, while, ternary operators to execute the particular piece of code.</p>
+
+<p style="font-size:18px;">For example,</p>
+
+<figure class="highlight plaintext"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br></pre></td><td class="code"><pre><span class="line">const name = &#x27;something&#x27;;</span><br><span class="line"></span><br><span class="line">if(name)&#123;</span><br><span class="line"></span><br><span class="line">console.log(&#x27;Hello&#x27; +name+&#x27;!&#x27; );     // Hello something!</span><br><span class="line"></span><br><span class="line">&#125;else&#123;</span><br><span class="line"></span><br><span class="line">console.log(&#x27;Hello!&#x27;);</span><br><span class="line"></span><br><span class="line">&#125;</span><br><span class="line"></span><br></pre></td></tr></table></figure>
+
+<p style="font-size:18px;">In the above example name is declared and initialised with the value 'something'. If the name is checked in the 'if condition' the value is type coerced to boolean and checks true and the code in that particular block get executed.</p>
+
+<figure class="highlight plaintext"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br></pre></td><td class="code"><pre><span class="line"></span><br><span class="line">const result = &#x27;&#x27; ? console.log(&#x27;given value is truthy&#x27;) : console.log(&#x27;given value is falsy&#x27;) ;</span><br><span class="line">// values are not equal</span><br><span class="line"></span><br></pre></td></tr></table></figure>
+
+<p style="font-size:18px;"> In above instance the value '' is checked, if the given value is truthy it executes the first statement otherwise the second statement will get executed.</p>
+
+
+
+
+
+
+
+
+
+
+
+
+
+      
+    </div>
+    <footer class="article-footer">
+      <a data-url="https://github.com/PatilKavya/truthy_falsy_values/2023/06/13/new/" data-id="cliu5ny07000091tg4ropfbq2" data-title="" class="article-share-link"><span class="fa fa-share">Share</span></a>
+      
+      
+      
+    </footer>
+  </div>
+  
+</article>
+
+
+
+  
+
+
+</section>
+        
+          <aside id="sidebar">
+  
+    
+
+  
+    
+
+  
+    
+  
+    
+  <div class="widget-wrap">
+    <h3 class="widget-title">Archives</h3>
+    <div class="widget">
+      <ul class="archive-list"><li class="archive-list-item"><a class="archive-list-link" href="/PatilKavya/truthy_falsy_values/archives/2023/06/">June 2023</a></li></ul>
+    </div>
+  </div>
+
+
+  
+    
+  <div class="widget-wrap">
+    <h3 class="widget-title">Recent Posts</h3>
+    <div class="widget">
+      <ul>
+        
+          <li>
+            <a href="/PatilKavya/truthy_falsy_values/2023/06/13/new/">(no title)</a>
+          </li>
+        
+      </ul>
+    </div>
+  </div>
+
+  
+</aside>
+        
+      </div>
+      <footer id="footer">
+  
+  <div class="outer">
+    <div id="footer-info" class="inner">
+      
+      &copy; 2023 Kavya Patil<br>
+      Powered by <a href="https://hexo.io/" target="_blank">Hexo</a>
+    </div>
+  </div>
+</footer>
+
+    </div>
+    <nav id="mobile-nav">
+  
+    <a href="/PatilKavya/truthy_falsy_values/" class="mobile-nav-link">Home</a>
+  
+    <a href="/PatilKavya/truthy_falsy_values/archives" class="mobile-nav-link">Archives</a>
+  
+</nav>
+    
+
+
+<script src="/PatilKavya/truthy_falsy_values/js/jquery-3.6.4.min.js"></script>
+
+
+
+  
+<script src="/PatilKavya/truthy_falsy_values/fancybox/jquery.fancybox.min.js"></script>
+
+
+
+
+<script src="/PatilKavya/truthy_falsy_values/js/script.js"></script>
+
+
+
+
+
+  </div>
+</body>
+</html>
